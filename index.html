@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurucharan College Online Portal - Redesigned Concept</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Base styles and font settings */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Subtle background animation */
+        .animated-gradient {
+            background-size: 200% 200%;
+            animation: gradient-animation 15s ease infinite;
+        }
+
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Custom styles for form elements to match the theme */
+        .form-input, .form-select {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .form-input:focus, .form-select:focus {
+            outline: none;
+            border-color: rgba(99, 102, 241, 0.7); /* Indigo */
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-white">
+
+    <div class="relative min-h-screen w-full overflow-hidden">
+        <!-- Animated Gradient Background -->
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 animated-gradient"></div>
+
+        <!-- Header Navigation -->
+        <header class="absolute top-0 left-0 right-0 z-30 p-4 md:p-6">
+            <nav class="container mx-auto flex justify-between items-center">
+                <!-- Logo and Home link -->
+                <a href="#" onclick="showPage('home-page')" class="flex items-center space-x-3 cursor-pointer">
+                    <div class="w-10 h-10 bg-indigo-500/80 rounded-full flex items-center justify-center font-bold text-lg border border-white/20">
+                        GC
+                    </div>
+                    <span class="font-semibold text-lg hidden sm:block">Gurucharan College</span>
+                </a>
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex items-center space-x-6 text-slate-300">
+                    <a href="#" onclick="showPage('concept-notice-page')" class="hover:text-white transition-colors">About</a>
+                    <a href="#" onclick="showPage('concept-notice-page')" class="hover:text-white transition-colors">Notices</a>
+                    <a href="#" onclick="showPage('concept-notice-page')" class="hover:text-white transition-colors">Contact</a>
+                </div>
+                <!-- Staff Login Button -->
+                <a href="#" onclick="showPage('staff-login-page')" class="bg-white/10 border border-white/20 backdrop-blur-sm text-white font-medium py-2 px-4 rounded-lg hover:bg-white/20 transition-all duration-300">
+                    Staff Login
+                </a>
+            </nav>
+        </header>
+
+        <!-- ===================================================================== -->
+        <!-- HOME PAGE / MAIN MENU                                                 -->
+        <!-- ===================================================================== -->
+        <main id="home-page" class="page-content relative z-10 flex items-center justify-center min-h-screen p-4">
+            <div class="w-full max-w-4xl bg-black/20 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-6 md:p-10 text-center">
+                <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-3">Welcome to the Online Portal</h1>
+                <p class="text-slate-300 text-base md:text-lg max-w-2xl mx-auto mb-8">Your gateway to admissions, academic services, and campus updates.</p>
+                <div class="bg-yellow-500/10 border border-yellow-500/30 text-yellow-200 rounded-xl p-4 mb-8 max-w-3xl mx-auto text-left flex items-start space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 h-6 w-6 mt-0.5 text-yellow-400"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    <div>
+                        <h3 class="font-semibold">Important Admission Notice</h3>
+                        <p class="text-sm text-yellow-300/80 mt-1">Admission to G C College is done purely on a merit basis through this online portal. Aspiring students are to be aware of middlemen/dalals. The college will not be held responsible for any such transactions.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                    <a href="https://www.abc.gov.in/" target="_blank" class="col-span-1 sm:col-span-2 lg:col-span-3 bg-indigo-600 text-white p-6 rounded-2xl flex flex-col items-center justify-center text-center hover:bg-indigo-500 transition-all duration-300 transform hover:-translate-y-1 shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 mb-3"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                        <span class="text-lg font-semibold">New Applicant Registration</span>
+                        <span class="text-sm text-indigo-200">Create your ABC ID and start your application</span>
+                    </a>
+                    <a href="#" onclick="showPage('applicant-login-page')" class="bg-white/5 p-5 rounded-2xl text-center hover:bg-white/10 transition-colors duration-300 border border-white/10 flex flex-col items-center justify-center">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7 mb-3 text-slate-300"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+                        <span class="font-medium">Applicant Login</span>
+                    </a>
+                    <a href="#" onclick="showPage('concept-notice-page')" class="bg-white/5 p-5 rounded-2xl text-center hover:bg-white/10 transition-colors duration-300 border border-white/10 flex flex-col items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7 mb-3 text-slate-300"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                        <span class="font-medium">Know Your Subject Details</span>
+                    </a>
+                    <a href="#" onclick="showPage('fee-payment-page')" class="bg-white/5 p-5 rounded-2xl text-center hover:bg-white/10 transition-colors duration-300 border border-white/10 flex flex-col items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7 mb-3 text-slate-300"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                        <span class="font-medium">Admission Fee Payment</span>
+                    </a>
+                    <a href="#" onclick="showModal()" class="bg-white/5 p-5 rounded-2xl text-center hover:bg-white/10 transition-colors duration-300 border border-white/10 flex flex-col items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7 mb-3 text-slate-300"><path d="M6 4h8a4 4 0 0 1 4 4v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M6 8h12"/><path d="M15 4v4"/></svg>
+                        <span class="font-medium">ID Card / Fee Card Print</span>
+                    </a>
+                    <a href="#" onclick="showModal()" class="bg-white/5 p-5 rounded-2xl text-center hover:bg-white/10 transition-colors duration-300 border border-white/10 flex flex-col items-center justify-center">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7 mb-3 text-slate-300"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                        <span class="font-medium">Library Card Print</span>
+                    </a>
+                    <a href="#" onclick="showModal()" class="bg-white/5 p-5 rounded-2xl text-center hover:bg-white/10 transition-colors duration-300 border border-white/10 flex flex-col items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7 mb-3 text-slate-300"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                        <span class="font-medium">Examination Fee Payment</span>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <!-- ===================================================================== -->
+        <!-- APPLICANT LOGIN PAGE                                                  -->
+        <!-- ===================================================================== -->
+        <main id="applicant-login-page" class="page-content hidden relative z-10 flex items-center justify-center min-h-screen p-4">
+            <div class="w-full max-w-md bg-black/20 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-6 md:p-10">
+                <h2 class="text-3xl font-bold text-center text-white mb-2">Applicant Authentication</h2>
+                <p class="text-slate-400 text-center mb-8">Please enter your details to log in.</p>
+                <form action="#" class="space-y-5">
+                    <div>
+                        <label for="login-class" class="block text-sm font-medium text-slate-300 mb-2">Select Class</label>
+                        <select id="login-class" class="form-select w-full p-3 rounded-lg">
+                            <option>Select</option>
+                            <option>HS 1st Year</option>
+                            <option>HS 2nd Year</option>
+                            <option>TDC Sem III</option>
+                            <option>TDC Sem V</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="login-stream" class="block text-sm font-medium text-slate-300 mb-2">Stream</label>
+                        <select id="login-stream" class="form-select w-full p-3 rounded-lg">
+                            <option>Select</option>
+                            <option>Arts</option>
+                            <option>Science</option>
+                            <option>Commerce</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mobile" class="block text-sm font-medium text-slate-300 mb-2">Enter Your MOBILE Number:</label>
+                        <input type="text" id="mobile" class="form-input w-full p-3 rounded-lg">
+                    </div>
+                    <div>
+                        <label for="reg-id" class="block text-sm font-medium text-slate-300 mb-2">Enter Your Registration ID:</label>
+                        <input type="text" id="reg-id" class="form-input w-full p-3 rounded-lg">
+                    </div>
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-slate-300 mb-2">Enter Your Password:</label>
+                        <input type="password" id="password" class="form-input w-full p-3 rounded-lg">
+                    </div>
+                     <div>
+                        <label for="roll-no" class="block text-sm font-medium text-slate-300 mb-2">Previous Class Roll No.</label>
+                        <input type="text" id="roll-no" placeholder="(For HS 2nd Yr / Sem III / Sem V Applicants)" class="form-input w-full p-3 rounded-lg placeholder:text-slate-500">
+                    </div>
+                    <button type="submit" class="w-full bg-indigo-600 text-white font-semibold p-3 rounded-lg hover:bg-indigo-500 transition-all duration-300 transform hover:-translate-y-0.5">Login</button>
+                </form>
+                <div class="mt-6 text-center text-sm text-slate-400 space-x-4">
+                    <a href="#" class="hover:text-white">Forgot Reg. ID/Password</a>
+                    <a href="#" class="hover:text-white">Forgot Application Sr. No.</a>
+                </div>
+                 <div class="mt-6 text-center">
+                    <a href="#" onclick="showPage('home-page')" class="text-indigo-400 hover:text-indigo-300 transition-colors">&larr; Back to Home</a>
+                </div>
+            </div>
+        </main>
+        
+        <!-- ===================================================================== -->
+        <!-- FEE PAYMENT PAGE                                                      -->
+        <!-- ===================================================================== -->
+        <main id="fee-payment-page" class="page-content hidden relative z-10 flex items-center justify-center min-h-screen p-4">
+            <div class="w-full max-w-md bg-black/20 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-6 md:p-10">
+                <h2 class="text-3xl font-bold text-center text-white mb-2">Admission Process</h2>
+                <p class="text-slate-400 text-center mb-8">Verify your details to proceed with payment.</p>
+                <form action="#" class="space-y-5">
+                    <div>
+                        <label for="app-serial" class="block text-sm font-medium text-slate-300 mb-2">Enter Application Serial Number:</label>
+                        <input type="text" id="app-serial" class="form-input w-full p-3 rounded-lg">
+                    </div>
+                    <div>
+                        <label for="reg-mobile" class="block text-sm font-medium text-slate-300 mb-2">Enter Registered Mobile Number:</label>
+                        <input type="text" id="reg-mobile" class="form-input w-full p-3 rounded-lg">
+                    </div>
+                    <button type="submit" class="w-full bg-indigo-600 text-white font-semibold p-3 rounded-lg hover:bg-indigo-500 transition-all duration-300 transform hover:-translate-y-0.5">Proceed &rarr;</button>
+                </form>
+                <div class="mt-8 text-center">
+                    <a href="#" onclick="showPage('home-page')" class="text-indigo-400 hover:text-indigo-300 transition-colors">&larr; Back to Home</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- ===================================================================== -->
+        <!-- STAFF LOGIN PAGE                                                      -->
+        <!-- ===================================================================== -->
+        <main id="staff-login-page" class="page-content hidden relative z-10 flex items-center justify-center min-h-screen p-4">
+            <div class="w-full max-w-sm bg-black/20 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-6 md:p-10">
+                <h2 class="text-3xl font-bold text-center text-white mb-2">Staff Portal</h2>
+                <p class="text-slate-400 text-center mb-8">Secure login for faculty and staff.</p>
+                <form action="#" class="space-y-5">
+                    <div>
+                        <label for="staff-email" class="block text-sm font-medium text-slate-300 mb-2">Email Address</label>
+                        <input type="email" id="staff-email" class="form-input w-full p-3 rounded-lg">
+                    </div>
+                    <div>
+                        <label for="staff-password" class="block text-sm font-medium text-slate-300 mb-2">Password</label>
+                        <input type="password" id="staff-password" class="form-input w-full p-3 rounded-lg">
+                    </div>
+                    <button type="submit" class="w-full bg-teal-600 text-white font-semibold p-3 rounded-lg hover:bg-teal-500 transition-all duration-300 transform hover:-translate-y-0.5">Login</button>
+                </form>
+                 <div class="mt-8 text-center">
+                    <a href="#" onclick="showPage('home-page')" class="text-indigo-400 hover:text-indigo-300 transition-colors">&larr; Back to Home</a>
+                </div>
+            </div>
+        </main>
+        
+        <!-- ===================================================================== -->
+        <!-- CONCEPT NOTICE PAGE                                                   -->
+        <!-- ===================================================================== -->
+        <main id="concept-notice-page" class="page-content hidden relative z-10 flex items-center justify-center min-h-screen p-4">
+            <div class="w-full max-w-md bg-black/20 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-6 md:p-10 text-center">
+                 <h2 class="text-3xl font-bold text-white mb-4">Concept Site</h2>
+                 <p class="text-slate-300 mb-8">This feature is not included in this interactive UI concept. In a real application, this would lead to a dedicated page.</p>
+                 <a href="#" onclick="showPage('home-page')" class="bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-indigo-500 transition-all duration-300">&larr; Back to Home</a>
+            </div>
+        </main>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- MODAL POPUP for "Contact Office"                                      -->
+    <!-- ===================================================================== -->
+    <div id="contact-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+        <div class="w-full max-w-sm bg-slate-800/80 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-2xl p-8 text-center">
+            <h3 class="text-2xl font-bold text-white mb-3">Action Required</h3>
+            <p class="text-slate-300 mb-6">For this service, please contact the college office directly during working hours.</p>
+            <button onclick="hideModal()" class="bg-indigo-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-indigo-500 transition-colors">
+                Close
+            </button>
+        </div>
+    </div>
+
+
+    <!-- ===================================================================== -->
+    <!-- JAVASCRIPT for page navigation and modal                              -->
+    <!-- ===================================================================== -->
+    <script>
+        const pages = document.querySelectorAll('.page-content');
+        const modal = document.getElementById('contact-modal');
+
+        // Function to switch between "pages"
+        function showPage(pageId) {
+            // Prevent default link behavior
+            event.preventDefault(); 
+            
+            // Hide all pages
+            pages.forEach(page => {
+                page.classList.add('hidden');
+            });
+
+            // Show the target page
+            const targetPage = document.getElementById(pageId);
+            if (targetPage) {
+                targetPage.classList.remove('hidden');
+                window.scrollTo(0, 0); // Scroll to top on page change
+            }
+        }
+
+        // Function to show the modal
+        function showModal() {
+            event.preventDefault();
+            if (modal) {
+                modal.classList.remove('hidden');
+            }
+        }
+
+        // Function to hide the modal
+        function hideModal() {
+            if (modal) {
+                modal.classList.add('hidden');
+            }
+        }
+    </script>
+
+</body>
+</html>
