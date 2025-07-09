@@ -6,9 +6,7 @@ This project is a personal UI/UX design concept that reimagines the online porta
 
 ---
 
-### ► [Live Demo Link](https://your-github-username.github.io/your-repo-name/)
-
-*(Replace the link above with your actual GitHub Pages URL after deployment.)*
+### ► [Live Demo Link](https://github.com/quadvecta/Gurucharan-College/)
 
 ---
 
@@ -37,6 +35,6 @@ This project is a concept and a work of passion. It is intended to be a part of 
 
 ## How to View or Edit
 
-1.  Clone the repository: `git clone https://github.com/your-github-username/your-repo-name.git`
+1.  Clone the repository: `git clone https://github.com/quadvecta/Gurucharan-College`
 2.  Open the `index.html` file in your web browser to view the project locally.
 3.  Since it's built with standard HTML and Tailwind CSS via a CDN, no installation or build steps are required.
