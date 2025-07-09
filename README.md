@@ -6,7 +6,7 @@ This project is a personal UI/UX design concept that reimagines the online porta
 
 ---
 
-### ► [Live Demo Link](https://github.com/quadvecta/Gurucharan-College/)
+### ► [Live Demo Link](https://quadvecta.github.io/Gurucharan-College/)
 
 ---
 
