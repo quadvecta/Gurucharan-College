@@ -7,6 +7,7 @@ body {
 }
 
 /* 1. TEXTURE: Noise Overlay 
+   This adds a subtle grain that makes the dark UI feel premium/tactile 
 */
 .noise-overlay {
     position: fixed;
@@ -34,6 +35,7 @@ body {
 }
 
 /* 3. INTERACTIVITY: The Spotlight Card 
+   We use ::before to create a radial gradient that tracks the mouse
 */
 .spotlight-card {
     position: relative;
@@ -60,7 +62,14 @@ body {
         rgba(255, 255, 255, 0.4),
         transparent 40%
     );
-
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
 /* The inner glow effect */
