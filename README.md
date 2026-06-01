@@ -24,10 +24,10 @@ The goal of this redesign was to transform the existing college portal into a mo
 
 ## Technology Stack
 
-* **HTML5:** For the core structure and content.
-* **Tailwind CSS:** For all styling, enabling a rapid and responsive utility-first design process.
-* **JavaScript:** For handling the interactive elements like page navigation and modals.
-* **Google Fonts:** Using the 'Inter' font family for clean, modern typography.
+* **HTML5**
+* **Tailwind CSS**
+* **JavaScript**
+* **Google Fonts**
 
 ## Disclaimer
 
